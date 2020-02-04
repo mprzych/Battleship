@@ -1,0 +1,72 @@
+body{
+  background-color: black;
+}
+
+div#board{
+  position: relative;
+  width: 1024px;
+  height: 863px;
+  margin: auto;
+  background: url("pics/board.jpg") no-repeat;
+}
+
+div#messageArea{
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  color: rgb(83, 175, 19);
+  font-weight: bold;
+  font-size: 30px;
+}
+
+table{
+  position: absolute;
+  left: 173px;
+  top: 98px;
+  border-spacing: 0px;
+}
+
+td{
+  width: 94px;
+  height: 94px;
+}
+
+.hit{
+  background: url("pics/ship.png") no-repeat center center;
+}
+
+.miss{
+  background: url("pics/miss.png") no-repeat center center;
+}
+
+.modal {
+  display: none;
+  position: relative;
+  top: 200px;
+  z-index: 1;
+  overflow: auto;
+}
+
+.modal-content {
+  background-color: rgba(0,0,0,0.7);
+  margin: 15% auto;
+  padding: 20px;
+  border: 4px solid #73FF34;
+  width: 50%;
+  color: #73FF34;
+  font-weight: bold;
+}
+
+.close {
+  color: #73FF34;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: grey;
+  text-decoration: none;
+  cursor: pointer;
+}
